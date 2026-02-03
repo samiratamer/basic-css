@@ -1,6 +1,4 @@
-/* =========================
-   Page background & base
-   ========================= */
+/* Page background and base font */
 body {
     background-color: #b7dfe8;
     font-family: Arial, Helvetica, sans-serif;
@@ -8,9 +6,7 @@ body {
     padding: 0 20px;
 }
 
-/* =========================
-   Main title
-   ========================= */
+/* Main page title */
 h1 {
     text-align: center;
     font-size: 36px;
@@ -18,28 +14,22 @@ h1 {
     margin-bottom: 30px;
 }
 
-/* =========================
-   Section headers
-   ========================= */
+/* Section headers */
 h2 {
     font-size: 22px;
     margin-top: 30px;
     margin-bottom: 10px;
 }
 
-/* =========================
-   Paragraph base style
-   ========================= */
+/* Base paragraph styling */
 p {
     font-size: 14px;
     line-height: 1.6;
     margin-bottom: 15px;
 }
 
-/* =========================
-   Paragraph 2 (green box)
-   ========================= */
-h2 + p + p {
+/* Second paragraph: bordered box */
+p:nth-of-type(2) {
     width: 80%;
     margin: 20px auto;
     padding: 15px;
@@ -48,38 +38,37 @@ h2 + p + p {
     background-color: #e9ffe9;
 }
 
-/* =========================
-   Paragraphs 4 & 5 (dark blue)
-   ========================= */
-h2 + p + p + p + p,
-h2 + p + p + p + p + p {
-    background-color: #002f6c;
+/* Fourth paragraph: dark blue */
+p:nth-of-type(4) {
+    background-color: #003366;
     color: white;
-    padding: 15px;
+    padding: 12px;
 }
 
-/* =========================
-   Links
-   ========================= */
+/* Fifth paragraph: darker blue */
+p:nth-of-type(5) {
+    background-color: #001f4d;
+    color: white;
+    padding: 12px;
+}
+
+/* Default link color (list items) */
 a {
     color: blue;
 }
 
+/* W3Schools link color */
 a[href*="w3schools"] {
     color: darkred;
 }
 
-/* =========================
-   Ordered list
-   ========================= */
+/* Ordered list with two-digit numbering */
 ol {
     list-style-type: decimal-leading-zero;
     margin-left: 25px;
 }
 
-/* =========================
-   Table styling
-   ========================= */
+/* Table styling */
 table {
     border-collapse: collapse;
     width: 60%;
@@ -87,17 +76,21 @@ table {
     margin-top: 15px;
 }
 
+/* Table borders */
 table, th, td {
     border: 1px solid black;
 }
 
+/* Table header */
 th {
     background-color: #cccccc;
     padding: 8px;
     text-align: left;
 }
 
+/* Table cells */
 td {
     background-color: #eeeeee;
     padding: 8px;
 }
+
