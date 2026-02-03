@@ -1,6 +1,6 @@
 /* Page background and base font */
 body {
-    background-color: lightblue; /* #b7dfe8 → lightblue is close */
+    background-color: lightblue;
     font-family: Arial, Helvetica, sans-serif;
     margin: 0;
     padding: 0 20px;
@@ -26,6 +26,7 @@ p {
     font-size: 14px;
     line-height: 1.6;
     margin-bottom: 15px;
+    padding: 0; /* Ensure no extra padding by default */
 }
 
 /* Second paragraph: bordered box */
@@ -38,59 +39,12 @@ p:nth-of-type(2) {
     background-color: white;
 }
 
-/* Fourth paragraph: dark blue */
-p:nth-of-type(4) {
-    background-color: navy; /* #003366 → navy */
-    color: white;
-    padding: 12px;
-}
-
-/* Fifth paragraph: darker blue */
+/* Fourth paragraph: dark blue, aligned with others */
+p:nth-of-type(4),
 p:nth-of-type(5) {
-    background-color: midnightblue; /* #001f4d → midnightblue */
+    background-color: navy; /* dark blue */
     color: white;
-    padding: 12px;
+    padding: 8px; /* small padding for readability */
+    margin: 0 0 15px 0; /* keep same bottom spacing as normal paragraphs */
+    width: auto; /* remove any box width constraints */
 }
-
-/* Default link color (list items) */
-a {
-    color: blue;
-}
-
-/* W3Schools link color */
-a[href*="w3schools"] {
-    color: darkred;
-}
-
-/* Ordered list with two-digit numbering */
-ol {
-    list-style-type: decimal-leading-zero;
-    margin-left: 25px;
-}
-
-/* Table styling */
-table {
-    border-collapse: collapse;
-    width: 60%;
-    background-color: white;
-    margin-top: 15px;
-}
-
-/* Table borders */
-table, th, td {
-    border: 1px solid black;
-}
-
-/* Table header */
-th {
-    background-color: lightgray; /* #cccccc → lightgray */
-    padding: 8px;
-    text-align: left;
-}
-
-/* Table cells */
-td {
-    background-color: gainsboro; /* #eeeeee → gainsboro */
-    padding: 8px;
-}
-
