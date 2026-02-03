@@ -29,7 +29,7 @@ p {
 }
 
 /* Second paragraph: bordered box */
-p:nth-of-type(2) {
+p.special-box {
     width: 80%;
     margin: 20px auto;
     padding: 15px;
@@ -39,8 +39,7 @@ p:nth-of-type(2) {
 }
 
 /* Fourth and fifth paragraphs: blue background and white text */
-p:nth-of-type(4),
-p:nth-of-type(5) {
+p.blue-text {
     background-color: blue;
     color: white;
     padding: 12px;
@@ -84,6 +83,6 @@ th {
 
 /* Table cells */
 td {
-    background-color: white;
+    background-color: #eeeeee;
     padding: 8px;
 }
