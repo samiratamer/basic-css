@@ -9,7 +9,7 @@ body {
 }
 
 /* =========================
-   Main page title
+   Main title
    ========================= */
 h1 {
     text-align: center;
@@ -28,7 +28,7 @@ h2 {
 }
 
 /* =========================
-   Base paragraph styling
+   Paragraph base style
    ========================= */
 p {
     font-size: 14px;
@@ -37,9 +37,9 @@ p {
 }
 
 /* =========================
-   Second paragraph (green box)
+   Paragraph 2 (green box)
    ========================= */
-p:nth-of-type(2) {
+h2 + p + p {
     width: 80%;
     margin: 20px auto;
     padding: 15px;
@@ -49,11 +49,10 @@ p:nth-of-type(2) {
 }
 
 /* =========================
-   LAST TWO PARAGRAPHS
-   Dark blue with white text
+   Paragraphs 4 & 5 (dark blue)
    ========================= */
-p:nth-last-of-type(2),
-p:nth-last-of-type(1) {
+h2 + p + p + p + p,
+h2 + p + p + p + p + p {
     background-color: #002f6c;
     color: white;
     padding: 15px;
@@ -66,13 +65,12 @@ a {
     color: blue;
 }
 
-/* W3Schools link */
 a[href*="w3schools"] {
     color: darkred;
 }
 
 /* =========================
-   Ordered list (01–05)
+   Ordered list
    ========================= */
 ol {
     list-style-type: decimal-leading-zero;
@@ -89,19 +87,16 @@ table {
     margin-top: 15px;
 }
 
-/* Table borders */
 table, th, td {
     border: 1px solid black;
 }
 
-/* Table header */
 th {
     background-color: #cccccc;
     padding: 8px;
     text-align: left;
 }
 
-/* Table cells */
 td {
     background-color: #eeeeee;
     padding: 8px;
