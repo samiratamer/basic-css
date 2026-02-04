@@ -1,6 +1,6 @@
 /* Page background and base font */
 body {
-    background-color: lightblue; /* #b7dfe8 ≈ lightblue */
+    background-color: lightblue;
     font-family: Arial, Helvetica, sans-serif;
     margin: 0;
     padding: 0 20px;
@@ -35,19 +35,19 @@ p:nth-of-type(2) {
     padding: 15px;
     border: 3px solid green;
     line-height: 1.8;
-    background-color: #white;
+    background-color: white;
 }
 
 /* Fourth paragraph: dark blue */
 p:nth-of-type(4) {
-    background-color: navy; 
+    background-color: navy;
     color: white;
     padding: 12px;
 }
 
 /* Fifth paragraph: darker blue */
 p:nth-of-type(5) {
-    background-color: navy; 
+    background-color: navy;
     color: white;
     padding: 12px;
 }
@@ -83,13 +83,13 @@ table, th, td {
 
 /* Table header */
 th {
-    background-color: lightgray; 
+    background-color: grey;
     padding: 8px;
     text-align: left;
 }
 
 /* Table cells */
 td {
-    background-color: white; 
+    background-color: white;
     padding: 8px;
 }
